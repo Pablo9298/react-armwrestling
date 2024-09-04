@@ -1,0 +1,63 @@
+.about {
+  padding-bottom: 100px;
+}
+
+.mainTitle {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(40px, 5vw, 50px);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.4;
+
+  span {
+    color: #e03a3a;
+  }
+}
+
+.secondTitle {
+  margin-top: 70px;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textWrapper {
+  max-width: 700px;
+  width: 100%;
+  & + .textWrapper {
+    margin-left: 30px;
+  }
+
+ p {
+   margin: 10px 0;
+   line-height: 2;
+ }
+}
+
+@media (max-width: 830px) {
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .textWrapper {
+    max-width: 100%;
+
+    & + .textWrapper {
+      margin-left: 0;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+}

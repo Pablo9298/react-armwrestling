@@ -1,0 +1,22 @@
+.gallery {
+  padding-bottom: 100px;
+
+  h3 {
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .galleryWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 830px) {
+  .gallery {
+    padding-bottom: 50px;
+  }
+}
