@@ -56,9 +56,10 @@
     justify-content: center;
   }
   .lists {
+    gap: 10px;
     li {
       a {
-        padding: 0;
+        padding: 1px;
       }
     }
   }
