@@ -2,15 +2,25 @@ import {Container} from '../../common/container/Container.tsx';
 import avatar from '../../assets/images/images.jpg'
 import styles from './team.module.scss'
 
-export function Team() {
+interface TeamProps {
+    sectionRefs: {
+        home: React.RefObject<HTMLDivElement>;
+        team: React.RefObject<HTMLDivElement>;
+        gallery: React.RefObject<HTMLDivElement>;
+        video: React.RefObject<HTMLDivElement>;
+        social: React.RefObject<HTMLDivElement>;
+    };
+}
+
+export function Team({sectionRefs}: TeamProps) {
 
     return (
-        <div className={styles.team}>
+        <div className={styles.team} ref={sectionRefs.team}>
             <Container>
 
-                <h3 id='team'></h3>
-                <div className={styles.bosswrapper}>
+                <div className={styles.bosswrapper} >
                     <div className={styles.teacher}>
+                        <h3 id="team"></h3>
                         <img src={avatar} alt="avatar" className={styles.avatar}/>
                         <p>Andrii L</p>
                         <span>PRO WRESTLER</span>

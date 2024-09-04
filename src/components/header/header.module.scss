@@ -51,15 +51,37 @@
   }
 }
 
+.sticky {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: black;
+  padding: 20px;
+  z-index: 999;
+}
+
 @media (max-width: 530px) {
   .menu {
     justify-content: center;
+    gap: 30px
   }
   .lists {
     gap: 10px;
     li {
       a {
         padding: 1px;
+      }
+    }
+  }
+
+  .sticky {
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+
+    li {
+      a {
+        padding: 5px;
       }
     }
   }

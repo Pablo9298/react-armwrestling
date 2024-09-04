@@ -1,12 +1,22 @@
 import {Container} from '../../common/container/Container.tsx';
 import styles from './about.module.scss'
 
-export function About() {
+interface AboutProps {
+    sectionRefs: {
+        home: React.RefObject<HTMLDivElement>;
+        team: React.RefObject<HTMLDivElement>;
+        gallery: React.RefObject<HTMLDivElement>;
+        video: React.RefObject<HTMLDivElement>;
+        social: React.RefObject<HTMLDivElement>;
+    };
+}
+
+export function About({sectionRefs}: AboutProps) {
 
     return (
-        <div className={styles.about}>
+        <div className={styles.about} ref={sectionRefs.home}>
             <Container>
-                <h1 className={styles.mainTitle}>
+                <h1 className={styles.mainTitle} id='home' >
                     EVERYTHING TO KNOW
                     <span> ABOUT EAST VS WEST</span>
                 </h1>
