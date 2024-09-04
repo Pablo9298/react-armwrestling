@@ -11,7 +11,7 @@ export const MyVideo = () => {
         <div className={styles.video}>
             <Container>
                 <div className={styles.videoWrapper}>
-                    <h3>Our Video</h3>
+                    <h3 id='video'>Our Video</h3>
                     <Player
                         playsInline
                         src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"

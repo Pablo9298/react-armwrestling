@@ -64,7 +64,7 @@ export const MyGallery: React.FC = () => {
     return (
         <div className={styles.gallery}>
             <Container>
-                <h3>Our Gallery</h3>
+                <h3 id='gallery'>Our Gallery</h3>
                 <div className={styles.galleryWrapper}>
                     <ImageGallery items={images} thumbnailPosition="bottom"/>
                 </div>

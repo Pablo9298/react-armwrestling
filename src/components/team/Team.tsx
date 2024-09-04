@@ -8,7 +8,7 @@ export function Team() {
         <div className={styles.team}>
             <Container>
 
-
+                <h3 id='team'></h3>
                 <div className={styles.bosswrapper}>
                     <div className={styles.teacher}>
                         <img src={avatar} alt="avatar" className={styles.avatar}/>
